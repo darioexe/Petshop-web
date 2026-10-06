@@ -1,0 +1,26 @@
+header {
+    background-color: #3C1642;
+    padding: 30px 20px;
+    text-align: center;
+}
+.Titulo {
+    color: #AFFC41;            
+    margin: 0;
+    font-size: 1cm
+}
+header h2 {
+    color: #B2FF9E;
+    margin-top: 8px;
+    font-weight: normal;
+}
+nav {
+    background-color: #086375;
+}
+nav a {
+    display: block;
+    padding: 12px 20px;
+    color: #ffffff;          
+    text-decoration: none;
+    font-weight: bold;
+
+}
