@@ -26,6 +26,7 @@ nav ul {
     margin: 0;
 
 }
+
 nav a {
     display: block;
     padding: 12px 20px;
@@ -39,6 +40,39 @@ nav a:hover {
     background-color: #1DD3B0;
     color: #3C1642;
     border-radius: 4px;
+}
+
+#boton-oscuro {
+    background-color: #AFFC41;
+    color: #3C1642;
+    padding: 8px 15px;
+    border-radius: 20px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+body.dark-mode {
+    background-color: #121212;
+    color: #f1f1f1;
+}
+
+body.dark-mode .tarjeta {
+    background-color: #1e1e1e;
+    border-color: #1DD3B0;
+    color: #f1f1f1;
+}
+
+body.dark-mode .tarjeta h2 {
+    color: #AFFC41;
+}
+
+body.dark-mode .tarjeta h3 {
+    color: #1DD3B0;
+}
+
+body.dark-mode .tarjeta ul li {
+    color: #ccc;
+    border-bottom-color: #333;
 }
 
 @media (max-width: 760px) {
