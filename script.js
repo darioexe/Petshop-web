@@ -11,3 +11,10 @@ function alternarModoOscuro() {
 }
 
 botonModo.addEventListener('click', alternarModoOscuro);
+
+const menuToggle = document.getElementById('menu-hamburguesa');
+const navUl = document.querySelector('nav ul');
+
+menuToggle.addEventListener('click', () => {
+    navUl.classList.toggle('active');
+});
