@@ -1,6 +1,6 @@
 header {
     background-color: #3C1642;
-    padding: 30px 20px;
+    padding: 10px 20px;
     text-align: center;
 }
 .Titulo {
@@ -12,6 +12,7 @@ header h2 {
     color: #B2FF9E;
     margin-top: 8px;
     font-weight: normal;
+    
 }
 nav {
     background-color: #086375;
@@ -40,6 +41,97 @@ nav a:hover {
     background-color: #1DD3B0;
     color: #3C1642;
     border-radius: 4px;
+}
+
+body {
+    font-family: sans-serif, system-ui;
+    line-height: 1.5;
+    background-color: #AFFC41;
+    color: #3C1642;
+    margin: 0;
+}
+
+.tarjeta {
+    background-color: #B2FF9E;
+    border: 4px solid #086375;
+    border-radius: 12px;
+    padding: 15px;
+    margin: 20px auto;
+    max-width: 600px;
+}
+
+.tarjeta h2 {
+    text-align: center;
+    color: #086375;
+}
+
+.tarjeta img {
+    display: block;
+    margin: 15px auto;
+    max-width: 60%;
+    height: auto;
+    border-radius: 8px;
+    border: 5px solid #1DD3B0;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.tarjeta ul {
+    margin: 10px 0;
+    padding-left: 20px;
+}
+
+.tarjeta ul li {
+    padding: 4px 0;
+    border-bottom: 1px dashed #e0e0e0;
+}
+
+.tarjeta form{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-top: 15px;
+
+}
+
+.tarjeta label {
+    font-weight: bold;
+    font-size: 0.9rem;
+}
+
+.tarjeta input,
+.tarjeta select,
+.tarjeta textarea {
+    padding: 10px;
+    border: 3px solid #086375;
+    border-radius: 6px;
+    font-size: 1rem;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.tarjeta button[type="submit"] {
+    background-color: #086375;
+    color: #ffffff;
+    padding: 10px;
+    border: none;
+    border-radius: 6px;
+    font-weight: bold;
+    cursor: pointer;
+    margin-top: 5px;
+}
+
+.tarjeta button[type="submit"]:hover {
+    background-color: #1DD3B0;
+    color: #3C1642;
+}
+
+footer {
+    background-color: #3C1642;
+    color: #B2FF9E;
+    text-align: center;
+    padding: 20px;
+    margin-top: 40px;
+    font-weight: bold;
 }
 
 #boton-oscuro {
@@ -75,10 +167,22 @@ body.dark-mode .tarjeta ul li {
     border-bottom-color: #333;
 }
 
+body.dark-mode .tarjeta input,
+body.dark-mode .tarjeta select,
+body.dark-mode .tarjeta textarea {
+    background-color: #2a2a2a;
+    color: #f1f1f1;
+    border-color: #1DD3B0;
+}
+
 @media (max-width: 760px) {
     nav ul {
         flex-direction: column;
         align-items: center;
         gap: 10px;
+    }
+    .tarjeta {
+        margin: 10px;
+        padding: 15px;
     }
 }
