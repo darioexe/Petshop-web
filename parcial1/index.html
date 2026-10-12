@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <title>Lavanderia burbujas</title>
+        <link rel="stylesheet" href="styles.css">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <body>
+        <header>
+            <h1 id="inicio" class="Titulo">Lavanderia Burbujas</h1>
+            <h2>Limpieza de Calidad y Barata</h2>
+        </header>
+
+        <nav>
+            <ul>
+                <li><a href="#inicio">Inicio</a></li>
+                <li><a href="#lavados">Lavados</a></li>
+                <li><a href="#Contacto">Contacto</a></li>
+            </ul>
+        </nav>
+        <main>
+            <section id="lavados" class="tarjeta">
+                <h2>Nuestros lavados</h2>
+                <p></p>
+                <ul>
+                    <li>Lavado por kilo - Bs 15</li>
+                    <li>Planchado de camisa - Bs 81</li>
+                    <li>Lavado de edredon - Bs 35</li>
+                </ul>
+            </section>
+            <section id="Contacto" class="tarjeta">
+                <h2>Deja tu encargo</h2>
+                <form action="">
+                    <label for="nombre">Nombre completo</label>
+                    <input type="text" id="nombre" name="nombre" placeholder="Tu nombre" required>
+                    <label for="correo">Correo Electronico</label>
+                    <input type="email" id="correo" name="correo" placeholder="tu@gmail.com" required>
+                    <textarea name="encargo" id="encargo" rows="4" placeholder="Escribenos"></textarea>
+                </form>
+            <button id="btn-confirmar" type="button">Confirmar Encargo</button>
+            <p id="mensaje" class="oculto"></p>
+            </section>
+
+        </main>
+        <footer>
+            <p>&copy;Parcial 1 - Nicolas Choque Candia - 12 de octubre de 2026</p>
+        </footer>
+        <script src="script.js" defer></script>
+    </body>   
+</html>
