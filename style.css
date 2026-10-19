@@ -125,6 +125,28 @@ body {
     color: #3C1642;
 }
 
+.aviso {
+  display: none;
+  margin-top: 14px;
+  padding: 10px 14px;
+  border-radius: 6px;
+  font-weight: bold;
+}
+
+.aviso.error {
+  display: block;
+  background-color: #5c1d1d;
+  color: #ffb4b4;
+  border-left: 4px solid #e05555;
+}
+
+.aviso.exito {
+  display: block;
+  background-color: #14301b;
+  color: #b7f0c4;
+  border-left: 4px solid #3fbf6a;
+}
+
 footer {
     background-color: #3C1642;
     color: #B2FF9E;
@@ -178,6 +200,18 @@ body.dark-mode .tarjeta textarea {
     background-color: #3C1642;
     color: #ffffff;
     border-color: #AFFC41;
+}
+
+body.dark-mode .aviso.error {
+  background-color: #5c1d1d;
+  color: #ffb4b4;
+  border-left-color: #e05555;
+}
+
+body.dark-mode .aviso.exito {
+  background-color: #14301b;
+  color: #b7f0c4;
+  border-left-color: #3fbf6a;
 }
 
 #menu-hamburguesa {

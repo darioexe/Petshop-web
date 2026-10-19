@@ -18,7 +18,7 @@ main {
 body {
     font-family: Arial, sans-serif;
     line-height: 1.5;
-    background-color: #8093f1;
+    background-color: #354dc7;
     color: #f7aef8;
     margin: 0;
     padding: 0;
@@ -44,7 +44,7 @@ nav a {
 }
 
 .tarjeta {
-    background-color: #72ddf7;
+    background-color: #48bcda;
     padding: 20px;
     margin-bottom: 20px;
     border: 2px solid #fdc5f5;
