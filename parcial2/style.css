@@ -1,0 +1,12 @@
+header {
+    text-align: center;
+}
+.aviso { 
+    display: none; 
+}
+.aviso.error { 
+    display: block; color: #bb0202; 
+}
+.aviso.exito { 
+    display: block; color: #00fa25; 
+}
