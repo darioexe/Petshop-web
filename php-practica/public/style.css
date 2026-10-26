@@ -1,0 +1,250 @@
+header {
+    background-color: #3C1642;
+    padding: 10px 20px;
+    text-align: center;
+}
+.Titulo {
+    color: #AFFC41;            
+    margin: 0;
+    font-size: 1cm
+}
+header h2 {
+    color: #B2FF9E;
+    margin-top: 8px;
+    font-weight: normal;
+    
+}
+nav {
+    background-color: #1DD3B0;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    padding: 10px;
+    margin: 0;
+
+}
+
+nav a {
+    display: block;
+    padding: 12px 20px;
+    color: #ffffff;          
+    text-decoration: none;
+    font-weight: bold;
+
+}
+
+nav a:hover {
+    background-color: #1DD3B0;
+    color: #3C1642;
+    border-radius: 4px;
+}
+
+body {
+    font-family: sans-serif, system-ui;
+    line-height: 1.5;
+    background-color: #AFFC41;
+    color: #3C1642;
+    margin: 0;
+}
+
+.tarjeta {
+    background-color: #B2FF9E;
+    border: 4px solid #086375;
+    border-radius: 12px;
+    padding: 15px;
+    margin: 20px auto;
+    max-width: 600px;
+}
+
+.tarjeta h2 {
+    text-align: center;
+    color: #086375;
+}
+
+.tarjeta img {
+    display: block;
+    margin: 15px auto;
+    max-width: 60%;
+    height: auto;
+    border-radius: 8px;
+    border: 5px solid #1DD3B0;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.tarjeta ul {
+    margin: 10px 0;
+    padding-left: 20px;
+}
+
+.tarjeta ul li {
+    padding: 4px 0;
+    border-bottom: 1px dashed #e0e0e0;
+}
+
+.tarjeta form{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-top: 15px;
+
+}
+
+.tarjeta label {
+    font-weight: bold;
+    font-size: 0.9rem;
+}
+
+.tarjeta input,
+.tarjeta select,
+.tarjeta textarea {
+    padding: 10px;
+    border: 3px solid #086375;
+    border-radius: 6px;
+    font-size: 1rem;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.tarjeta button[type="submit"] {
+    background-color: #086375;
+    color: #ffffff;
+    padding: 10px;
+    border: none;
+    border-radius: 6px;
+    font-weight: bold;
+    cursor: pointer;
+    margin-top: 5px;
+}
+
+.tarjeta button[type="submit"]:hover {
+    background-color: #1DD3B0;
+    color: #3C1642;
+}
+
+.aviso {
+  display: none;
+  margin-top: 14px;
+  padding: 10px 14px;
+  border-radius: 6px;
+  font-weight: bold;
+}
+
+.aviso.error {
+  display: block;
+  background-color: #5c1d1d;
+  color: #ffb4b4;
+  border-left: 4px solid #e05555;
+}
+
+.aviso.exito {
+  display: block;
+  background-color: #14301b;
+  color: #b7f0c4;
+  border-left: 4px solid #3fbf6a;
+}
+
+footer {
+    background-color: #3C1642;
+    color: #B2FF9E;
+    text-align: center;
+    padding: 20px;
+    margin-top: 40px;
+    border: 40px #086375;
+    font-weight: bold;
+}
+
+#boton-oscuro {
+    background-color: #AFFC41;
+    color: #3C1642;
+    padding: 8px 15px;
+    border-radius: 20px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+body.dark-mode {
+    background-color: #3C1642;
+    color: #B2FF9E;
+}
+
+body.dark-mode .tarjeta {
+    background-color: #086375;
+    border-color: #AFFC41;
+    color: #ffffff;
+}
+
+body.dark-mode .tarjeta h2 {
+    color: #AFFC41;
+}
+
+body.dark-mode .tarjeta h3 {
+    color: #B2FF9E;
+}
+
+body.dark-mode .tarjeta ul li {
+    color: #ffffff;
+    border-bottom-color: #1DD3B0;
+}
+
+body.dark-mode .tarjeta label {
+    color: #B2FF9E;
+}
+
+body.dark-mode .tarjeta input,
+body.dark-mode .tarjeta select,
+body.dark-mode .tarjeta textarea {
+    background-color: #3C1642;
+    color: #ffffff;
+    border-color: #AFFC41;
+}
+
+body.dark-mode .aviso.error {
+  background-color: #5c1d1d;
+  color: #ffb4b4;
+  border-left-color: #e05555;
+}
+
+body.dark-mode .aviso.exito {
+  background-color: #14301b;
+  color: #b7f0c4;
+  border-left-color: #3fbf6a;
+}
+
+#menu-hamburguesa {
+    display: none;
+    background: transparent;
+    border: none;
+    color: #ffffff;
+    font-size: 1.8rem;
+    cursor: pointer;
+    padding: 10px;
+    width: 100%;
+    text-align: center;
+}
+
+@media (max-width: 760px) {
+    #menu-hamburguesa {
+        display: block;
+    }
+
+    nav ul {
+        display: none;
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+    }
+
+    nav ul.active {
+        display: flex;
+    }
+
+     .tarjeta {
+        margin: 10px;
+        padding: 15px;
+    }
+}
+   
