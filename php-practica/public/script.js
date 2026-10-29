@@ -23,7 +23,7 @@ const formularioContacto = document.querySelector("#form-contacto");
 const avisoContacto = document.querySelector("#mensaje-estado");
 
 function revisarFormulario(event) {
-  event.preventDefault();
+ // event.preventDefault(); //
 
   const nombre = document.querySelector("#nombre").value;
   const correo = document.querySelector("#correo").value;

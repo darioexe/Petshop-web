@@ -8,7 +8,8 @@
         <p>WhatsApp: 12345678</p>
 
         <h2>Escribenos</h2>
-        <form id="form-contacto" novalidate>
+        <form action="{{ route('contacto.guardar') }}" method="POST">
+            @csrf 
             <label for="nombre">Nombre completo</label>
             <input type="text" id="nombre" name="nombre" placeholder="Tu nombre" required>
             
@@ -27,9 +28,8 @@
 
             <label for="mensaje">Mensaje</label>
             <textarea name="mensaje" id="mensaje" rows="4" placeholder="Escribenos"></textarea>
+            
             <button type="submit">Enviar</button>
-
-            <p id="mensaje-estado" class="aviso"></p>
         </form>
     </section>
 @endsection
